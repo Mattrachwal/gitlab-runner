@@ -1,0 +1,22 @@
+{
+  "gitlab_url": "https://gitlab.com",
+  "concurrent": 5,
+  "builds_dir": "/var/lib/gitlab-runner/builds",
+  "cache_dir": "/var/lib/gitlab-runner/cache",
+  "security": {
+    "run_untagged": false,
+    "locked": true,
+    "access_level": "not_protected"
+  },
+  "runners": [
+    {
+      "name": "mini1-shared",
+      "tags": [
+        "shared",
+        "shell",
+        "debian13"
+      ],
+      "registration_token": "REPLACE_WITH_YOUR_GROUP_REGISTRATION_TOKEN"
+    }
+  ]
+}
